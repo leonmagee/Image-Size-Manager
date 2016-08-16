@@ -38,3 +38,11 @@ Image_Size_Manager::plugin_activation_action();
 require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-scripts.php';
 
 Image_Size_Manager_Scripts::scripts_styles_actions();
+
+/**
+ * Process modified image size creation
+ */
+require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-ajax.php';
+
+Image_Size_Manager_Ajax::modify_image_sizes();
+

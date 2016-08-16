@@ -20,7 +20,7 @@ class Image_Size_Manager {
 		 * This button should display and hide the thumbnail options
 		 * By default, if this is not used, it should generate all thumbnails.
 		 */
-		echo "<a class='button'>Specify Image Sizes</a>";
+		echo "<a class='button'>" . __( 'Specify Image Sizes' ) . "</a>";
 
 		/**
 		 * Get image sizes
@@ -44,17 +44,22 @@ class Image_Size_Manager {
 			/**
 			 * 'Regular' sizes are different since the dimensions are stored in options - you can change them
 			 *  in Settings -> Media
+			 * @todo this function was taken from online, I should rework this with my own variable names so it's easier for me to read.
 			 */
-			foreach ( get_intermediate_image_sizes() as $_size ) {
-				if ( in_array( $_size, array( 'thumbnail', 'medium', 'medium_large', 'large' ) ) ) {
-					$sizes[ $_size ]['width']  = get_option( "{$_size}_size_w" );
-					$sizes[ $_size ]['height'] = get_option( "{$_size}_size_h" );
-					$sizes[ $_size ]['crop']   = (bool) get_option( "{$_size}_crop" );
-				} elseif ( isset( $_wp_additional_image_sizes[ $_size ] ) ) {
-					$sizes[ $_size ] = array(
-						'width'  => $_wp_additional_image_sizes[ $_size ]['width'],
-						'height' => $_wp_additional_image_sizes[ $_size ]['height'],
-						'crop'   => $_wp_additional_image_sizes[ $_size ]['crop'],
+			foreach ( get_intermediate_image_sizes() as $image_size ) {
+
+				if ( in_array( $image_size, array( 'thumbnail', 'medium', 'medium_large', 'large' ) ) ) {
+
+					$sizes[ $image_size ]['width']  = get_option( "{$image_size}_size_w" );
+					$sizes[ $image_size ]['height'] = get_option( "{$image_size}_size_h" );
+					$sizes[ $image_size ]['crop']   = (bool) get_option( "{$image_size}_crop" );
+
+				} elseif ( isset( $_wp_additional_image_sizes[ $image_size ] ) ) {
+
+					$sizes[ $image_size ] = array(
+						'width'  => $_wp_additional_image_sizes[ $image_size ]['width'],
+						'height' => $_wp_additional_image_sizes[ $image_size ]['height'],
+						'crop'   => $_wp_additional_image_sizes[ $image_size ]['crop'],
 					);
 				}
 			}
@@ -71,14 +76,14 @@ class Image_Size_Manager {
 
 			$name_new = str_replace( array( '_', '-' ), ' ', $name );
 
-			return ucfirst( $name_new );
+			return __( ucfirst( $name_new ) );
 		}
 
 		?>
 
 		<div class="image-size-options-wrap">
 
-			<h2>Choose Image Sizes to Generate</h2>
+			<h2><?php _e( 'Choose Image Sizes to Generate' ); ?></h2>
 
 			<?php
 

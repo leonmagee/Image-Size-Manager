@@ -1,34 +1,39 @@
 (function( $ ) {
 	'use strict';
 
+	console.log('admin js is now working...');
+
 	/**
-	 * All of the code for your admin-facing JavaScript source
-	 * should reside in this file.
-	 *
-	 * Note: It has been assumed you will write jQuery code here, so the
-	 * $ function reference has been prepared for usage within the scope
-	 * of this function.
-	 *
-	 * This enables you to define handlers, for when the DOM is ready:
-	 *
-	 * $(function() {
-	 *
-	 * });
-	 *
-	 * When the window is loaded:
-	 *
-	 * $( window ).load(function() {
-	 *
-	 * });
-	 *
-	 * ...and/or other possibilities.
-	 *
-	 * Ideally, it is not considered best practise to attach more than a
-	 * single DOM-ready or window-load handler for a particular page.
-	 * Although scripts in the WordPress core, Plugins and Themes may be
-	 * practising this, we should strive to set a better example in our own work.
+	 * Click Handler for Toggle
 	 */
 
-	console.log('admin js is now working...');
+
+	/**
+	 * Create array of values when checkbox is selected. 
+	 */
+	var checked_boxes_array = [];
+
+	$('.image-size-options-wrap input[type="checkbox"]').on('click', function () {
+
+		var size_name = $(this).attr('name');
+
+		//console.log($(this).attr('name'));
+
+		var count_val = $(this).parent().find('.size-count').val();
+
+		if (!checked_boxes_array[count_val]) {
+
+			checked_boxes_array[count_val] = size_name;
+
+		} else {
+
+			checked_boxes_array[count_val] = null;
+		}
+
+
+		console.log(checked_boxes_array);
+	});
+
+
 
 })( jQuery );
