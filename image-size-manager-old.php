@@ -1,6 +1,13 @@
 <?php
 
 /**
+ * The plugin bootstrap file
+ *
+ * This file is read by WordPress to generate the plugin information in the plugin
+ * admin area. This file also includes all of the dependencies used by the plugin,
+ * registers the activation and deactivation functions, and defines a function
+ * that starts the plugin.
+ *
  * @link              http://mageemedia.net
  * @since             1.0.0
  * @package           Image_Size_Manager
@@ -23,6 +30,26 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+/**
+ * The code that runs during plugin activation.
+ * This action is documented in includes/class-image-size-manager-activator.php
+ */
+function activate_image_size_manager() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-activator.php';
+	Image_Size_Manager_Activator::activate();
+}
+
+/**
+ * The code that runs during plugin deactivation.
+ * This action is documented in includes/class-image-size-manager-deactivator.php
+ */
+function deactivate_image_size_manager() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-deactivator.php';
+	Image_Size_Manager_Deactivator::deactivate();
+}
+
+register_activation_hook( __FILE__, 'activate_image_size_manager' );
+register_deactivation_hook( __FILE__, 'deactivate_image_size_manager' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -30,19 +57,34 @@ if ( ! defined( 'WPINC' ) ) {
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager.php';
 
+/**
+ * Begins execution of the plugin.
+ *
+ * Since everything within the plugin is registered via hooks,
+ * then kicking off the plugin from this point in the file does
+ * not affect the page life cycle.
+ *
+ * @since    1.0.0
+ */
+function run_image_size_manager() {
+
+	$plugin = new Image_Size_Manager();
+	$plugin->run();
+
+}
+run_image_size_manager();
+
+
+$plugin_dir = plugin_dir_path(__FILE__);
+
+
 
 /**
- * Enqueue Scripts and Styles
+ * Add Plugin Styles and Scripts
  */
 function plugin_styles_and_scripts() {
 
-	$plugin_dir = plugin_dir_url(__FILE__);
-
-	// plugin admin css
-	wp_enqueue_style( 'upload-image-css', $plugin_dir . 'admin/css/image-size-manager-admin.css' );
-
-	// plugin admin js
-	wp_enqueue_script( 'upload-image-js', $plugin_dir . 'admin/js/image-size-manager-admin.js' );
+	wp_enqueue_style( 'upload-image-css', plugin_dir_path(__FILE__) . '/admin/css/image-size-manager-admin.css' );
 }
 
 add_action( 'admin_enqueue_scripts', 'plugin_styles_and_scripts' );
