@@ -30,15 +30,11 @@ if ( ! defined( 'WPINC' ) ) {
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager.php';
 
-new Image_Size_Manager();
-
+Image_Size_Manager::plugin_activation_action();
 
 /**
  * Enqueue Scripts and Styles
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-scripts.php';
 
-new Image_Size_Manager_Scripts();
-
-
-
+Image_Size_Manager_Scripts::scripts_styles_actions();

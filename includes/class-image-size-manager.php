@@ -5,15 +5,13 @@
  */
 class Image_Size_Manager {
 
-	public function __construct() {
+	static function plugin_activation_action() {
 		/**
 		 * Modify Image Upload to add more options
 		 *
 		 * Actions: pre-upload-ui | pre-plupload-upload-ui
 		 */
-
-		add_action( 'pre-upload-ui', array( $this, 'add_upload_controls' ) );
-
+		add_action( 'pre-upload-ui', array( __CLASS__, 'add_upload_controls' ) );
 	}
 
 	function add_upload_controls() {
