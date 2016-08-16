@@ -1,0 +1,29 @@
+.image-size-options-wrap {
+
+  h2 {
+    margin: 15px 0 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #DDD;
+  }
+
+  .one-checkbox {
+    margin: 5px;
+    padding: 5px 11px 7px;
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    text-align: left;
+    min-width: 240px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 3px;
+
+    input {
+      vertical-align: bottom;
+    }
+
+    label {
+      vertical-align: middle;
+      font-size: 14px;
+    }
+  }
+}
