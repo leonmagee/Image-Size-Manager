@@ -95,7 +95,7 @@ class Image_Size_Manager {
 
 			foreach ( $image_sizes as $image_size => $dimensions ) { ?>
 
-				<div class="one-checkbox">
+				<div class="one-checkbox" id="<?php echo $image_size; ?>">
 
 					<div class="icon-wrap">
 
