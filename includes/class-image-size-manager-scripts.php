@@ -19,8 +19,11 @@ class Image_Size_Manager_Scripts {
 		// plugin admin css
 		wp_enqueue_style( 'upload-image-css', $plugin_dir . '../admin/css/image-size-manager-admin.css' );
 
+		// font awesome css
+		wp_enqueue_style( 'font-awesome-cdn', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
+
 		// plugin admin js
-		wp_enqueue_script( 'upload-image-js', $plugin_dir . '../admin/js/image-size-manager-admin.js' );
+		wp_enqueue_script( 'upload-image-js', $plugin_dir . '../admin/js/image-size-manager-admin.js', array( 'jquery' ) );
 	}
 
 

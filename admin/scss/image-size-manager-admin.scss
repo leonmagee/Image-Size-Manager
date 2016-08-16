@@ -1,29 +1,99 @@
-.image-size-options-wrap {
+//.images-size-manager-button-wrap {
+//
+//  padding-bottom: 10px;
+//
+//  a.button {
+//
+//    -webkit-user-select: none; /* Chrome all / Safari all */
+//    -moz-user-select: none; /* Firefox all */
+//    -ms-user-select: none; /* IE 10+ */
+//    user-select: none;
+//  }
+//}
+
+.image-size-manager-options-wrap {
+
+  //display: none;   // IMPORTANT - THIS IS REQUIRED FOR TOGGLE TO WORK
+  margin: 25px 0 30px;
+  border: 1px solid #CCC;
+  padding: 5px 5px 10px;
+
+  //&.display {
+  //
+  //  display: block;
+  //}
 
   h2 {
-    margin: 15px 0 10px;
+
+    margin: 8px 0 10px;
     padding-bottom: 4px;
-    border-bottom: 1px dashed #DDD;
+    text-transform: uppercase;
+    text-align: center;
+    color: #444;
   }
 
   .one-checkbox {
+
     margin: 5px;
-    padding: 5px 11px 7px;
-    background-color: #EEE;
-    border: 1px solid #DDD;
+    padding: 6px 11px 6px;
+    background-color: #43AC6A;
+    color: #FFF;
     text-align: left;
     min-width: 240px;
     text-transform: uppercase;
     display: inline-block;
-    border-radius: 3px;
-
-    input {
-      vertical-align: bottom;
-    }
+    border-radius: 6px;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
 
     label {
-      vertical-align: middle;
-      font-size: 14px;
+
+      font-size: 13px;
     }
+
+
+    &:hover {
+
+      cursor: pointer;
+      background-color: lighten(#43AC6A, 5%);
+    }
+
+    .icon-wrap {
+
+      width: 20px;
+      display: inline-block;
+      vertical-align: middle;
+
+      i.fa.fa-check-square {
+
+        font-size: 19px;
+      }
+    }
+
+    &.deselected {
+
+      background-color: #f04124;
+
+      &:hover {
+
+        background-color: #f04124;
+      }
+
+      i.fa.fa-check-square {
+
+        &:before {
+
+          content: "\f00d";
+        }
+      }
+    }
+
+    //input {
+    //
+    //  vertical-align: bottom;
+    //}
+
   }
 }

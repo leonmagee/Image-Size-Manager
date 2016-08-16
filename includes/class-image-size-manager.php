@@ -17,12 +17,6 @@ class Image_Size_Manager {
 	function add_upload_controls() {
 
 		/**
-		 * This button should display and hide the thumbnail options
-		 * By default, if this is not used, it should generate all thumbnails.
-		 */
-		echo "<a class='button'>" . __( 'Specify Image Sizes' ) . "</a>";
-
-		/**
 		 * Get image sizes
 		 *
 		 * I need to list all of the size dimensions as well - documentation here:
@@ -79,11 +73,21 @@ class Image_Size_Manager {
 			return __( ucfirst( $name_new ) );
 		}
 
+		/**
+		 * @todo - the markup for the form can move into a different class?
+		 */
 		?>
 
-		<div class="image-size-options-wrap">
+<!--		<div class="images-size-manager-button-wrap">-->
+<!---->
+<!--			<a class='button'>--><?php //_e( 'Specify Image Sizes' ); ?><!--</a>-->
+<!---->
+<!--		</div>-->
 
-			<h2><?php _e( 'Choose Image Sizes to Generate' ); ?></h2>
+
+		<div class="image-size-manager-options-wrap">
+
+			<h2><?php _e( 'Image Sizes that will be generated' ); ?></h2>
 
 			<?php
 
@@ -93,14 +97,30 @@ class Image_Size_Manager {
 
 				<div class="one-checkbox">
 
+					<div class="icon-wrap">
+
+						<i class="fa fa-check-square" aria-hidden="true"></i>
+
+					</div>
+
 					<input type="hidden" class="size-count" value="<?php echo $counter; ?>"/>
 
 					<?php ++ $counter; ?>
 
-					<input type="checkbox" id="upload_<?php echo $counter; ?>" name="<?php echo $image_size; ?>"/>
+<!--					<input type="checkbox" id="upload_--><?php //echo $counter; ?><!--" name="--><?php //echo $image_size; ?><!--"/>-->
+
+					<?php
+
+					$width_label = $dimensions['width'] ? $dimensions['width'] . ' w' : 'auto';
+					$height_label = $dimensions['height'] ? $dimensions['height'] . ' h' : 'auto';
+
+
+					if ( $dimensions['width'] == 0 ) {
+
+					} ?>
 
 					<label for="upload_<?php echo $counter; ?>"><?php echo img_sz_nm( $image_size ); ?>
-						- <?php echo $dimensions['width']; ?> x <?php echo $dimensions['height']; ?></label>
+						- <?php echo $width_label; ?> x <?php echo $height_label; ?></label>
 
 				</div>
 

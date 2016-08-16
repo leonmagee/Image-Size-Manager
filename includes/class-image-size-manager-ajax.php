@@ -63,7 +63,3 @@ class Image_Size_Manager_Ajax {
 
 
 }
-
-
-
-
