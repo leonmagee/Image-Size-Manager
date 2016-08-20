@@ -7,14 +7,6 @@
     $(function () {
 
         /**
-         * Toggle Options display
-         */
-        // $('.images-size-manager-button-wrap a.button').click(function () {
-        //
-        //     $('.image-size-manager-options-wrap').toggleClass('display');
-        // });
-
-        /**
          * Toggle Image Size Boxes
          */
         $('.one-checkbox').click(function () {
@@ -22,10 +14,19 @@
             $(this).toggleClass('deselected');
         });
 
-
         /**
-         * Click Handler for Toggle
+         * Deselect All Checkboxes
          */
+
+        $('.description-text a.deselect-all-images').click(function () {
+
+            $('.one-checkbox').addClass('deselected');
+        });
+
+        $('.description-text a.select-all-images').click(function () {
+
+            $('.one-checkbox').removeClass('deselected');
+        });
 
 
         /**
@@ -37,9 +38,6 @@
 
             var size_name = $(this).attr('id');
 
-            //console.log($(this).attr('name'));
-
-            //var count_val = $(this).parent().find('.size-count').val();
             var count_val = $(this).find('.size-count').val();
 
             if (!checked_boxes_array[count_val]) {
@@ -51,6 +49,36 @@
                 checked_boxes_array[count_val] = null;
             }
 
+            var formdata = new FormData();
+
+            formdata.append("checked_boxes_array", checked_boxes_array);
+
+            formdata.append("image_size_click_happened", 'click');
+
+            formdata.append("action", "ism_custom_ajax_hook");
+
+            $.ajax({
+                type: 'POST',
+                url: ajaxurl,
+                data: formdata,
+                contentType: false,
+                processData: false,
+                success: function (data, textStatus, XMLHttpRequest) {
+                    /**
+                     * Log the returned data
+                     */
+                    console.log(data);
+
+                    /**
+                     * Use data to modify value of hidden field
+                     */
+                    //$('input#field_id').val(data);
+
+                },
+                error: function (MLHttpRequest, textStatus, errorThrown) {
+                    alert(errorThrown);
+                }
+            });
 
             console.log(checked_boxes_array);
         });

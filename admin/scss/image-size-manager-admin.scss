@@ -1,27 +1,8 @@
-//.images-size-manager-button-wrap {
-//
-//  padding-bottom: 10px;
-//
-//  a.button {
-//
-//    -webkit-user-select: none; /* Chrome all / Safari all */
-//    -moz-user-select: none; /* Firefox all */
-//    -ms-user-select: none; /* IE 10+ */
-//    user-select: none;
-//  }
-//}
-
 .image-size-manager-options-wrap {
 
-  //display: none;   // IMPORTANT - THIS IS REQUIRED FOR TOGGLE TO WORK
   margin: 25px 0 30px;
   border: 1px solid #CCC;
   padding: 5px 5px 10px;
-
-  //&.display {
-  //
-  //  display: block;
-  //}
 
   h2 {
 
@@ -53,7 +34,6 @@
       font-size: 13px;
     }
 
-
     &:hover {
 
       cursor: pointer;
@@ -66,7 +46,7 @@
       display: inline-block;
       vertical-align: middle;
 
-      i.fa.fa-check-square {
+      i.fa {
 
         font-size: 19px;
       }
@@ -74,26 +54,38 @@
 
     &.deselected {
 
-      background-color: #f04124;
+      background-color: #BBB;
 
       &:hover {
 
-        background-color: #f04124;
+        background-color: #BBB;
       }
 
-      i.fa.fa-check-square {
+      i.fa {
 
         &:before {
 
-          content: "\f00d";
+          content: "\f096";
         }
       }
     }
-
-    //input {
-    //
-    //  vertical-align: bottom;
-    //}
-
   }
+
+  .description-text {
+
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+
+    a.deselect-all-images, a.select-all-images {
+
+      text-decoration: underline;
+
+      &:hover {
+
+        cursor: pointer;
+      }
+    }
+  }
+
 }

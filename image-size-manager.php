@@ -46,3 +46,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-ajax.ph
 
 Image_Size_Manager_Ajax::modify_image_sizes();
 
+/**
+ * Require Custom AJAX
+ */
+require plugin_dir_path(__FILE__) . 'includes/class-image-size-manager-wp-ajax.php';
+

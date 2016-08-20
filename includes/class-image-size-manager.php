@@ -78,16 +78,15 @@ class Image_Size_Manager {
 		 */
 		?>
 
-<!--		<div class="images-size-manager-button-wrap">-->
-<!---->
-<!--			<a class='button'>--><?php //_e( 'Specify Image Sizes' ); ?><!--</a>-->
-<!---->
-<!--		</div>-->
-
-
 		<div class="image-size-manager-options-wrap">
 
 			<h2><?php _e( 'Image Sizes that will be generated' ); ?></h2>
+
+			<p class="description-text"><?php _e( 'Deselect any images sizes you don\'t want to be generated.' ); ?>
+				<a class="deselect-all-images"><?php _e( 'Generate No Image Sizes' ); ?></a>
+				&nbsp-&nbsp
+				<a class="select-all-images"><?php _e( 'Generate All Image Sizes' ); ?></a>
+			</p>
 
 			<?php
 
@@ -99,21 +98,16 @@ class Image_Size_Manager {
 
 					<div class="icon-wrap">
 
-						<i class="fa fa-check-square" aria-hidden="true"></i>
+						<i class="fa fa-check-square-o" aria-hidden="true"></i>
 
 					</div>
 
 					<input type="hidden" class="size-count" value="<?php echo $counter; ?>"/>
 
-					<?php ++ $counter; ?>
+					<?php ++ $counter;
 
-<!--					<input type="checkbox" id="upload_--><?php //echo $counter; ?><!--" name="--><?php //echo $image_size; ?><!--"/>-->
-
-					<?php
-
-					$width_label = $dimensions['width'] ? $dimensions['width'] . ' w' : 'auto';
+					$width_label  = $dimensions['width'] ? $dimensions['width'] . ' w' : 'auto';
 					$height_label = $dimensions['height'] ? $dimensions['height'] . ' h' : 'auto';
-
 
 					if ( $dimensions['width'] == 0 ) {
 
@@ -129,6 +123,4 @@ class Image_Size_Manager {
 		</div>
 
 	<?php }
-
-
 }
