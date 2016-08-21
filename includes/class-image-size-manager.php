@@ -87,6 +87,7 @@ class Image_Size_Manager {
 				&nbsp-&nbsp
 				<a class="select-all-images"><?php _e( 'Generate All Image Sizes' ); ?></a>
 			</p>
+			<p class="description-text"><?php _e( 'Additional images sizes are only generated if the original image size exceeds the dimensions of the other image sizes.' ); ?></p>
 
 			<?php
 

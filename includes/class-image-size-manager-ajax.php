@@ -1,65 +1,31 @@
 <?php
+/**
+ *  AJAX PHP Function
+ * @todo make this a class
+ */
+function image_size_manager_ajax() {
+
+	if ( isset( $_POST['image_size_click_happened'] ) ) {
+
+		$checked_boxes_array = $_POST['checked_boxes_array'];
+
+		//$boxes_array = json_decode( $checked_boxes_array );
+
+		$boxes_serialized = serialize( $checked_boxes_array );
+
+		//update_option( 'image-size-manager-removed-sizes', 'ajax is working!!!!' );
+		update_option( 'image-size-manager-removed-sizes', $boxes_serialized );
+
+
+		/**
+		 * Return data to AJAX Javascript
+		 */
+		die( 'returning ajax data from PHP - option updated with JS' );
+		//die( $custom_field_result );
+	}
+}
 
 /**
- * Class Image_Size_Manager_Ajax
- *
- * @todo separate test file creation into separate class
+ *  Ajax Action Hooks - references name of JS action passed to formdata
  */
-class Image_Size_Manager_Ajax {
-
-	static function modify_image_sizes() {
-
-		/**
-		 * Change Image Sizes that will be generated
-		 */
-
-		add_filter( 'intermediate_image_sizes_advanced', array( __CLASS__, 'change_image_sizes_to_generate' ) );
-	}
-
-	function change_image_sizes_to_generate( $sizes ) {
-
-		/**
-		 * Debug Info
-		 * this file is saved in 'wp-admin' in the theme
-		 * @todo learn how to move this file into the plugin directory?
-		 */
-		$debug_file = fopen( "leon-debug.txt", "w" );
-
-		if ( ! $debug_file ) {
-			die();
-		}
-
-		file_put_contents( "leon-debug.txt", print_r( $sizes, true ) );
-
-		$demo_text = "Filter is working Awesome - called from PLUGIN!!!!!... \n";
-
-		fwrite( $debug_file, $demo_text );
-
-		fclose( $debug_file );
-
-
-		/**
-		 * Define new sizes
-		 * @todo trigger all of this with ajax - pass in array of sizes that need to be created...
-		 */
-		$sizes_new = array(
-			'medium' => array(
-				'width'  => 133,
-				'height' => 133,
-				'crop'   => 1
-			)
-		);
-
-		return $sizes_new;
-
-//	[medium] => Array
-//	(
-//		[width] => 300
-//            [height] => 300
-//            [crop] =>
-//        )
-
-	}
-
-
-}
+add_action( 'wp_ajax_ism_custom_ajax_hook', 'image_size_manager_ajax' );

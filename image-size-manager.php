@@ -42,12 +42,12 @@ Image_Size_Manager_Scripts::scripts_styles_actions();
 /**
  * Process modified image size creation
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-ajax.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-image-creation-hook.php';
 
-Image_Size_Manager_Ajax::modify_image_sizes();
+Image_Size_Manager_Image_Creation_Hook::modify_image_sizes();
 
 /**
  * Require Custom AJAX
  */
-require plugin_dir_path(__FILE__) . 'includes/class-image-size-manager-wp-ajax.php';
+require plugin_dir_path(__FILE__) . 'includes/class-image-size-manager-ajax.php';
 
