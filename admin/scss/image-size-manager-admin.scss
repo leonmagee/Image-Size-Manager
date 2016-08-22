@@ -48,26 +48,28 @@
 
       i.fa {
 
-        font-size: 19px;
+        font-size: 21px;
+        vertical-align: middle;
       }
     }
 
     &.deselected {
 
-      background-color: #BBB;
+      background-color: #444;
+      color: #999;
 
       &:hover {
 
-        background-color: #BBB;
+        background-color: #444;
       }
 
-      i.fa {
-
-        &:before {
-
-          content: "\f096";
-        }
-      }
+      //i.fa {
+      //
+      //  &:before {
+      //
+      //    content: "\f096";
+      //  }
+      //}
     }
   }
 
@@ -85,6 +87,12 @@
 
         cursor: pointer;
       }
+    }
+
+    i.fa {
+
+      color: #0073aa;
+      opacity: 0;
     }
   }
 

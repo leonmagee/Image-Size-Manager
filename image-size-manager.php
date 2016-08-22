@@ -25,8 +25,16 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+///**
+// * Get Data
+// */
+//require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-get-sizes.php';
+//
+//$images_sizes = new Image_Size_Manager_Get_Sizes();
+
+
 /**
- * Activate Plugin
+ * Admin Template
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager.php';
 
@@ -50,4 +58,8 @@ Image_Size_Manager_Image_Creation_Hook::modify_image_sizes();
  * Require Custom AJAX
  */
 require plugin_dir_path(__FILE__) . 'includes/class-image-size-manager-ajax.php';
+
+Image_Size_Manager_Ajax::image_size_manager_custom_ajax_hook();
+
+
 

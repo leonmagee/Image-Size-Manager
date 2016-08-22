@@ -2,6 +2,8 @@
 
 /**
  * Class Image_Size_Manager
+ * it might be easier to have these be objects instead of static classes, since it will
+ * make dependency injection easier???
  */
 class Image_Size_Manager {
 
@@ -11,7 +13,7 @@ class Image_Size_Manager {
 		 *
 		 * Actions: pre-upload-ui | pre-plupload-upload-ui
 		 */
-		add_action( 'pre-upload-ui', array( __CLASS__, 'add_upload_controls' ) );
+		add_action( 'pre-upload-ui', array( new Self(), 'add_upload_controls' ) );
 	}
 
 	function add_upload_controls() {
@@ -29,39 +31,18 @@ class Image_Size_Manager {
 		 * @global $_wp_additional_image_sizes
 		 * @uses   get_intermediate_image_sizes()
 		 * @return array $sizes Data for all currently-registered image sizes.
+		 *
+		 * @todo these should be methods of a class
 		 */
-		function get_image_sizes() {
-			global $_wp_additional_image_sizes;
 
-			$sizes = array();
+		/**
+		 * Get Image Size Data
+		 */
+		require plugin_dir_path( __FILE__ ) . 'class-image-size-manager-get-sizes.php';
 
-			/**
-			 * 'Regular' sizes are different since the dimensions are stored in options - you can change them
-			 *  in Settings -> Media
-			 * @todo this function was taken from online, I should rework this with my own variable names so it's easier for me to read.
-			 */
-			foreach ( get_intermediate_image_sizes() as $image_size ) {
+		$images_sizes_object = new Image_Size_Manager_Get_Sizes();
 
-				if ( in_array( $image_size, array( 'thumbnail', 'medium', 'medium_large', 'large' ) ) ) {
-
-					$sizes[ $image_size ]['width']  = get_option( "{$image_size}_size_w" );
-					$sizes[ $image_size ]['height'] = get_option( "{$image_size}_size_h" );
-					$sizes[ $image_size ]['crop']   = (bool) get_option( "{$image_size}_crop" );
-
-				} elseif ( isset( $_wp_additional_image_sizes[ $image_size ] ) ) {
-
-					$sizes[ $image_size ] = array(
-						'width'  => $_wp_additional_image_sizes[ $image_size ]['width'],
-						'height' => $_wp_additional_image_sizes[ $image_size ]['height'],
-						'crop'   => $_wp_additional_image_sizes[ $image_size ]['crop'],
-					);
-				}
-			}
-
-			return $sizes;
-		}
-
-		$image_sizes = get_image_sizes();
+		$image_sizes = $images_sizes_object->sizes_array;
 
 		/**
 		 * Modify
@@ -74,6 +55,11 @@ class Image_Size_Manager {
 		}
 
 		/**
+		 * When this page renders, update the option to remove previous contents
+		 */
+		update_option( 'image-size-manager-removed-sizes', '' );
+
+		/**
 		 * @todo - the markup for the form can move into a different class?
 		 */
 		?>
@@ -83,9 +69,9 @@ class Image_Size_Manager {
 			<h2><?php _e( 'Image Sizes that will be generated' ); ?></h2>
 
 			<p class="description-text"><?php _e( 'Deselect any images sizes you don\'t want to be generated.' ); ?>
-				<a class="deselect-all-images"><?php _e( 'Generate No Image Sizes' ); ?></a>
-				&nbsp-&nbsp
-				<a class="select-all-images"><?php _e( 'Generate All Image Sizes' ); ?></a>
+				&nbsp;&nbsp;
+				<a class="deselect-all-images"><?php _e( 'Generate No Image Sizes' ); ?></a> <i class="fa fa-refresh fa-spin deselect" aria-hidden="true"></i>
+				<a class="select-all-images"><?php _e( 'Generate All Image Sizes' ); ?></a> <i class="fa fa-refresh fa-spin select" aria-hidden="true"></i>
 			</p>
 			<p class="description-text"><?php _e( 'Additional images sizes are only generated if the original image size exceeds the dimensions of the other image sizes.' ); ?></p>
 
@@ -107,11 +93,17 @@ class Image_Size_Manager {
 
 					<?php ++ $counter;
 
+					/**
+					 * @todo what about crop?
+					 */
 					$width_label  = $dimensions['width'] ? $dimensions['width'] . ' w' : 'auto';
 					$height_label = $dimensions['height'] ? $dimensions['height'] . ' h' : 'auto';
 
 					if ( $dimensions['width'] == 0 ) {
 
+						/**
+						 * @todo what am I doing here?
+						 */
 					} ?>
 
 					<label for="upload_<?php echo $counter; ?>"><?php echo img_sz_nm( $image_size ); ?>

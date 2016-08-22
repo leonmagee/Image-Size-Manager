@@ -4,12 +4,14 @@
  * Class Image_Size_Manager_Scripts
  *
  * Load all admin scripts and styles
+ *
+ * @todo only load these on the media upload page
  */
 class Image_Size_Manager_Scripts {
 
 	static function scripts_styles_actions() {
 
-		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_scripts_styles' ) );
+		add_action( 'admin_enqueue_scripts', array( new Self(), 'enqueue_scripts_styles' ) );
 	}
 
 	function enqueue_scripts_styles() {

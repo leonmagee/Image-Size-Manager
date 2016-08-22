@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class Image_Size_Manager_Image_Creation_Hook
  */
@@ -11,7 +10,7 @@ class Image_Size_Manager_Image_Creation_Hook {
 		 * Change Image Sizes that will be generated
 		 */
 
-		add_filter( 'intermediate_image_sizes_advanced', array( __CLASS__, 'change_image_sizes_to_generate' ) );
+		add_filter( 'intermediate_image_sizes_advanced', array( new Self(), 'change_image_sizes_to_generate' ) );
 	}
 
 	function change_image_sizes_to_generate( $sizes ) {
@@ -37,8 +36,6 @@ class Image_Size_Manager_Image_Creation_Hook {
 					$sizes_new[ $size ] = $array;
 				}
 			}
-
-			update_option( 'image-size-manager-removed-sizes', '' );
 
 			return $sizes_new;
 
