@@ -49,9 +49,9 @@ class Image_Size_Manager_Ajax {
 				/**
 				 * Get Image Size Data
 				 */
-				require plugin_dir_path( __FILE__ ) . 'class-image-size-manager-get-size-names.php';
+				$image_sizes_string = $_POST['box_id_array'];
 
-				$image_sizes_array = Image_Size_Manager_Get_Size_Names::get_sizes();
+				$image_sizes_array = self::ism_array_from_data( $image_sizes_string );
 
 				/**
 				 * Update Option

@@ -23,11 +23,25 @@
 
             var formdata = new FormData();
 
+
+            /**
+             * Get all checkbox names
+             */
+
+            var box_id_array = [];
+
+            $('.image-size-manager-options-wrap .one-checkbox').each(function () {
+
+                box_id_array.push($(this).attr('id'));
+            });
+
             formdata.append("image_size_deselect_all", 'click');
 
             formdata.append("action", "ism_custom_ajax_hook");
 
             formdata.append("ism_user_id", ism_user_id);
+
+            formdata.append("box_id_array", box_id_array);
 
             $.ajax({
                 type: 'POST',
