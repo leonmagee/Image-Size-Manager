@@ -65,13 +65,19 @@ class Image_Size_Manager {
 		?>
 
 		<div class="image-size-manager-options-wrap">
-
+			
+			<?php $ism_user_id = get_current_user_id(); ?>
+			
+			<input type="hidden" id="ism-current-user-id" value="<?php echo $ism_user_id; ?>"/>
+			
 			<h2><?php _e( 'Image Sizes that will be generated' ); ?></h2>
 
 			<p class="description-text"><?php _e( 'Deselect any images sizes you don\'t want to be generated.' ); ?>
 				&nbsp;&nbsp;
-				<a class="deselect-all-images"><?php _e( 'Generate No Image Sizes' ); ?></a> <i class="fa fa-refresh fa-spin deselect" aria-hidden="true"></i>
-				<a class="select-all-images"><?php _e( 'Generate All Image Sizes' ); ?></a> <i class="fa fa-refresh fa-spin select" aria-hidden="true"></i>
+				<a class="deselect-all-images"><?php _e( 'Generate No Image Sizes' ); ?></a> <i
+					class="fa fa-refresh fa-spin deselect" aria-hidden="true"></i>
+				<a class="select-all-images"><?php _e( 'Generate All Image Sizes' ); ?></a> <i
+					class="fa fa-refresh fa-spin select" aria-hidden="true"></i>
 			</p>
 			<p class="description-text"><?php _e( 'Additional images sizes are only generated if the original image size exceeds the dimensions of the other image sizes.' ); ?></p>
 
@@ -98,6 +104,7 @@ class Image_Size_Manager {
 					 */
 					$width_label  = $dimensions['width'] ? $dimensions['width'] . ' w' : 'auto';
 					$height_label = $dimensions['height'] ? $dimensions['height'] . ' h' : 'auto';
+					$crop_label    = $dimensions['crop'] ? 'Crop' : 'No Crop';
 
 					if ( $dimensions['width'] == 0 ) {
 
@@ -107,7 +114,7 @@ class Image_Size_Manager {
 					} ?>
 
 					<label for="upload_<?php echo $counter; ?>"><?php echo img_sz_nm( $image_size ); ?>
-						- <?php echo $width_label; ?> x <?php echo $height_label; ?></label>
+						- <?php echo $width_label; ?> x <?php echo $height_label; ?> - <?php echo $crop_label; ?></label>
 
 				</div>
 

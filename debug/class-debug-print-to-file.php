@@ -9,7 +9,7 @@ class Debug_Print_To_File {
 	public $file_name;
 	public $output_data;
 
-	public function __construct( $output_data = 'demo data new', $file_name = 'leon-debug.txt' ) {
+	public function __construct( $output_data = 'demo data new', $file_name = 'debug-log.txt' ) {
 
 		//$debug_file = fopen( $file_name, "w" );
 		$file_path = plugin_dir_path( __FILE__ ) . '/log/' . $file_name;

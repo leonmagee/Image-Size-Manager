@@ -26,11 +26,16 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
- * Get Curren User ID
- * I need to have a general class for plugin vars,
- * or maybe I can make some constants?
+ * Get Current User ID - define constant for option name
+ * This is done so more than one user can same images concurrently
  * @todo Think about design pattern for doing all this
  */
+
+//$user_id = get_current_user_id();
+//$option_string = 'image-size-manager-removed-sizes_' . $user_id;
+//define( "IMAGE_SIZE_MANAGER_OPTION_NAME", $option_string );
+
+
 
 add_action( 'init', 'image_size_manager_get_current_user_id' );
 
@@ -38,10 +43,14 @@ function image_size_manager_get_current_user_id() {
 
 	$user_id = get_current_user_id();
 	if ( $user_id ) {
-		$option_string = 'option_string_name_' . $user_id;
-		//die( $option_string );
+
+		global $IMAGE_SIZE_MANAGER_OPTION_NAME;
+		$IMAGE_SIZE_MANAGER_OPTION_NAME = 'image-size-manager-removed-sizes_' . $user_id;
+		//define( "IMAGE_SIZE_MANAGER_OPTION_NAME", $option_string );
+		//echo IMAGE_SIZE_MANAGER_OPTION_NAME;
 	}
 }
+
 
 
 /**

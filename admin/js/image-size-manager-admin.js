@@ -5,6 +5,12 @@
      * When DOM is ready
      */
     $(function () {
+
+        /**
+         * Get current user ID
+         */
+        var ism_user_id = $('input#ism-current-user-id').val();
+
         /**
          * Deselect All Checkboxes
          */
@@ -20,6 +26,8 @@
             formdata.append("image_size_deselect_all", 'click');
 
             formdata.append("action", "ism_custom_ajax_hook");
+
+            formdata.append("ism_user_id", ism_user_id);
 
             $.ajax({
                 type: 'POST',
@@ -64,6 +72,8 @@
 
             formdata.append("action", "ism_custom_ajax_hook");
 
+            formdata.append("ism_user_id", ism_user_id);
+
             $.ajax({
                 type: 'POST',
                 url: ajaxurl,
@@ -95,7 +105,6 @@
         /**
          * Create array of values when checkbox is selected.
          * Trigger AJAX when image size is clicked
-         * @todo copy this for each button
          */
         var checked_boxes_array = [];
 
@@ -133,6 +142,8 @@
             formdata.append("image_size_click_happened", 'click');
 
             formdata.append("action", "ism_custom_ajax_hook");
+
+            formdata.append("ism_user_id", ism_user_id);
 
             $.ajax({
                 type: 'POST',
