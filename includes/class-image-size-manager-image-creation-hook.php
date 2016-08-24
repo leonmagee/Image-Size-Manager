@@ -19,7 +19,11 @@ class Image_Size_Manager_Image_Creation_Hook {
 		/**
 		 * @todo Make sure this works correctly if there is no option in the DB.
 		 */
-		if ( $option_serialized = get_option( 'image-size-manager-removed-sizes' ) ) {
+
+		$ism_user_id = get_current_user_id();
+		$ism_option_string = 'image-size-manager-removed-sizes_' . $ism_user_id;
+
+		if ( $option_serialized = get_option( $ism_option_string ) ) {
 
 			$option = unserialize( $option_serialized );
 

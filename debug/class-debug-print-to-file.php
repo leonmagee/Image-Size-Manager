@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class Debug_Print_To_File
  */

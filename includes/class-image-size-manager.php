@@ -57,17 +57,22 @@ class Image_Size_Manager {
 		/**
 		 * When this page renders, update the option to remove previous contents
 		 */
-		update_option( 'image-size-manager-removed-sizes', '' );
+		$ism_user_id = get_current_user_id();
+		$ism_option_string = 'image-size-manager-removed-sizes_' . $ism_user_id;
+		update_option( $ism_option_string, '' );
 
 		/**
 		 * @todo - the markup for the form can move into a different class?
 		 */
+
+		global $_wp_additional_image_sizes;
+		var_dump( $_wp_additional_image_sizes );
+
+
 		?>
 
 		<div class="image-size-manager-options-wrap">
-			
-			<?php $ism_user_id = get_current_user_id(); ?>
-			
+
 			<input type="hidden" id="ism-current-user-id" value="<?php echo $ism_user_id; ?>"/>
 			
 			<h2><?php _e( 'Image Sizes that will be generated' ); ?></h2>

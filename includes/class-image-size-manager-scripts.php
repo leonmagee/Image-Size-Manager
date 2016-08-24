@@ -16,7 +16,7 @@ class Image_Size_Manager_Scripts {
 
 	function enqueue_scripts_styles( $page_slug ) {
 
-		if ( $page_slug == 'media-new.php' ) {
+		if ( ( $page_slug == 'media-new.php' ) || ( $page_slug == 'upload.php' ) ) {
 
 			$plugin_dir = plugin_dir_url( __FILE__ );
 

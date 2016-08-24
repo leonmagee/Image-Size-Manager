@@ -5,6 +5,15 @@
  */
 class Image_Size_Manager_Ajax {
 
+	public function ism_array_from_data( $data_string ) {
+
+		// create array of image sizes
+		$option_explode = explode( ',', $data_string );
+
+		// remove empty elements from array
+		return array_filter( $option_explode );
+	}
+
 
 	static function image_size_manager_custom_ajax_hook() {
 
@@ -23,23 +32,14 @@ class Image_Size_Manager_Ajax {
 
 				$checked_boxes_array = $_POST['checked_boxes_array'];
 
-				$boxes_serialized = serialize( $checked_boxes_array );
-
-				//$new_array        = array( 'name' => 'Leon', 'car' => 'Saturn' );
-				//$array_serialized = serialize( $new_array );
-
-				//$cont_string = IMAGE_SIZE_MANAGER_OPTION_NAME . '_xxx';
-
+				$data_array = self::ism_array_from_data( $checked_boxes_array );
 
 				// DEBUG START
 				require plugin_dir_path( __FILE__ ) . '../debug/class-debug-print-to-file.php';
-				new Debug_Print_To_File( $ism_option_string );
+				new Debug_Print_To_File( $data_array );
 				// DEBUG END
 
-				//$user_id       = get_current_user_id();
-				//$option_string = 'image-size-manager-removed-sizes_' . $user_id;
-
-				update_option( $ism_option_string, $boxes_serialized );
+				update_option( $ism_option_string, $data_array );
 				//update_option( 'image-size-manager-removed-sizes', $boxes_serialized );
 
 				die( 'returning ajax data from PHP - option updated with JS' );
@@ -47,27 +47,15 @@ class Image_Size_Manager_Ajax {
 			} elseif ( isset( $_POST['image_size_deselect_all'] ) ) {
 
 				/**
-				 * @todo loop through all image sizes and then add a serialized array of hte values to the database
-				 */
-
-				/**
 				 * Get Image Size Data
 				 */
-				require plugin_dir_path( __FILE__ ) . 'class-image-size-manager-get-sizes.php';
 
-				$images_sizes_object = new Image_Size_Manager_Get_Sizes();
-
-				$image_sizes = $images_sizes_object->sizes_array;
-
-				/**
-				 * Serialize image size data to add to database
-				 */
-				$image_size_array = serialize( $image_sizes );
+				$image_sizes_array = get_intermediate_image_sizes();
 
 				/**
 				 * Update Option
 				 */
-				update_option( 'image-size-manager-removed-sizes', $image_size_array );
+				update_option( $ism_option_string, $image_sizes_array );
 
 
 				// DEBUG START
@@ -79,7 +67,7 @@ class Image_Size_Manager_Ajax {
 
 			} elseif ( isset( $_POST['image_size_select_all'] ) ) {
 
-				update_option( 'image-size-manager-removed-sizes', '' );
+				update_option( $ism_option_string, '' );
 
 				die( 'all selected' );
 			}
