@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f780812-840f-422a-9d43-9d9495a91079" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/class-image-size-manager-get-size-names.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/image-size-manager-admin.js" afterPath="$PROJECT_DIR$/admin/js/image-size-manager-admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-image-size-manager-ajax.php" afterPath="$PROJECT_DIR$/includes/class-image-size-manager-ajax.php" />
-    </list>
+    <list default="true" id="5f780812-840f-422a-9d43-9d9495a91079" name="Default" comment="" />
     <ignored path="Image-Size-Manager.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -386,12 +381,12 @@
       <updated>1471320007322</updated>
       <workItem from="1471320008704" duration="14074000" />
       <workItem from="1471458144504" duration="19140000" />
-      <workItem from="1471990301894" duration="13297000" />
+      <workItem from="1471990301894" duration="13446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46511000" />
+    <option name="totallyTimeSpent" value="46660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -404,10 +399,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="50" width="1416" height="818" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35298398" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35298398" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
