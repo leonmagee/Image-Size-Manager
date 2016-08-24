@@ -25,12 +25,23 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-///**
-// * Get Data
-// */
-//require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-get-sizes.php';
-//
-//$images_sizes = new Image_Size_Manager_Get_Sizes();
+/**
+ * Get Curren User ID
+ * I need to have a general class for plugin vars,
+ * or maybe I can make some constants?
+ * @todo Think about design pattern for doing all this
+ */
+
+add_action( 'init', 'image_size_manager_get_current_user_id' );
+
+function image_size_manager_get_current_user_id() {
+
+	$user_id = get_current_user_id();
+	if ( $user_id ) {
+		$option_string = 'option_string_name_' . $user_id;
+		//die( $option_string );
+	}
+}
 
 
 /**
@@ -57,7 +68,7 @@ Image_Size_Manager_Image_Creation_Hook::modify_image_sizes();
 /**
  * Require Custom AJAX
  */
-require plugin_dir_path(__FILE__) . 'includes/class-image-size-manager-ajax.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-image-size-manager-ajax.php';
 
 Image_Size_Manager_Ajax::image_size_manager_custom_ajax_hook();
 

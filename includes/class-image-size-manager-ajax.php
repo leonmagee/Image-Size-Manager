@@ -49,7 +49,7 @@ class Image_Size_Manager_Ajax {
 
 
 			// DEBUG START
-			require plugin_dir_path( __FILE__ ) . 'class-debug-print-to-file.php';
+			require plugin_dir_path( __FILE__ ) . '../debug/class-debug-print-to-file.php';
 			new Debug_Print_To_File();
 			// DEBUG END
 
