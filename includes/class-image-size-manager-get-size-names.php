@@ -7,8 +7,7 @@ class Image_Size_Manager_Get_Size_Names {
 
 	public $size_names;
 	
-	public function __construct() {
-		var_dump( 'class working' );
+	public static function get_sizes() {
 
 		// get regular sizes
 		$regular_sizes_array = get_intermediate_image_sizes();

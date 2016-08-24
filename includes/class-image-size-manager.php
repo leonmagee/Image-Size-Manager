@@ -64,11 +64,6 @@ class Image_Size_Manager {
 		/**
 		 * @todo - the markup for the form can move into a different class?
 		 */
-
-		global $_wp_additional_image_sizes;
-		var_dump( $_wp_additional_image_sizes );
-
-
 		?>
 
 		<div class="image-size-manager-options-wrap">
