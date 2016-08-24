@@ -29,9 +29,15 @@ class Image_Size_Manager_Scripts {
 			);
 
 			// font awesome css
+//			wp_enqueue_style(
+//				'font-awesome-cdn',
+//				'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'
+//			);
 			wp_enqueue_style(
-				'font-awesome-cdn',
-				'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'
+				'vendor-font-awesome',
+				$plugin_dir . '../vendor/font-awesome/css/font-awesome.min.css',
+				'',
+				'4.6.3'
 			);
 
 			// plugin admin js
