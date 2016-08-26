@@ -1,15 +1,12 @@
+/**
+ * For media-new.php admin page - upload box loads immediately
+ */
 (function ($) {
     'use strict';
 
     /**
      * When DOM is ready
-     * This works fine when the ui is loaded to start, but there is an issue
-     * when it appears later. I need to have this activate when the media upload
-     * button is selected...
-     *
-     * what I need to have happen is to trigger
      */
-
     $(function () {
             /**
              * Get current user ID
