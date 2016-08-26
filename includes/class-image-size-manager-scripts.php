@@ -16,9 +16,9 @@ class Image_Size_Manager_Scripts {
 
 	function enqueue_scripts_styles( $page_slug ) {
 
-		if ( ( $page_slug == 'media-new.php' ) || ( $page_slug == 'upload.php' ) ) {
+		$plugin_dir = plugin_dir_url( __FILE__ );
 
-			$plugin_dir = plugin_dir_url( __FILE__ );
+		if ( ( $page_slug == 'media-new.php' ) || ( $page_slug == 'upload.php' ) ) {
 
 			// plugin admin css
 			wp_enqueue_style(
@@ -29,21 +29,31 @@ class Image_Size_Manager_Scripts {
 			);
 
 			// font awesome css
-//			wp_enqueue_style(
-//				'font-awesome-cdn',
-//				'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'
-//			);
 			wp_enqueue_style(
 				'vendor-font-awesome',
 				$plugin_dir . '../vendor/font-awesome/css/font-awesome.min.css',
 				'',
 				'4.6.3'
 			);
+		}
+
+		if ( $page_slug == 'media-new.php' ) {
 
 			// plugin admin js
 			wp_enqueue_script(
 				'image-size-manager-js',
-				$plugin_dir . '../admin/js/image-size-manager-admin.js',
+				$plugin_dir . '../admin/js/image-size-manager-admin-media-new.js',
+				array( 'jquery' ),
+				'1.0.1'
+			);
+		}
+
+		if ( $page_slug == 'upload.php' ) {
+
+			// plugin admin js
+			wp_enqueue_script(
+				'image-size-manager-js',
+				$plugin_dir . '../admin/js/image-size-manager-admin-upload.js',
 				array( 'jquery' ),
 				'1.0.1'
 			);

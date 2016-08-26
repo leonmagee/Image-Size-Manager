@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5f780812-840f-422a-9d43-9d9495a91079" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/image-size-manager-admin.js" afterPath="$PROJECT_DIR$/admin/js/image-size-manager-admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-image-size-manager-scripts.php" afterPath="$PROJECT_DIR$/includes/class-image-size-manager-scripts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-image-size-manager.php" afterPath="$PROJECT_DIR$/includes/class-image-size-manager.php" />
     </list>
     <ignored path="Image-Size-Manager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,13 +52,13 @@
       <file leaf-file-name="class-image-size-manager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+            <state relative-caret-position="138">
+              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
               <folding>
-                <marker date="1472074218000" expanded="true" signature="1744:1854" ph="..." />
-                <marker date="1472074218000" expanded="true" signature="2112:2123" ph="..." />
-                <marker date="1472074218000" expanded="true" signature="2263:2274" ph="..." />
-                <marker date="1472074218000" expanded="true" signature="2664:2959" ph="..." />
+                <marker date="1472144826000" expanded="true" signature="2001:2111" ph="..." />
+                <marker date="1472144826000" expanded="true" signature="2369:2380" ph="..." />
+                <marker date="1472144826000" expanded="true" signature="2520:2531" ph="..." />
+                <marker date="1472144826000" expanded="true" signature="2921:3216" ph="..." />
               </folding>
             </state>
           </provider>
@@ -85,8 +87,8 @@
       <file leaf-file-name="class-image-size-manager-scripts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-scripts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            <state relative-caret-position="438">
+              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -95,8 +97,28 @@
       <file leaf-file-name="image-size-manager-admin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image-size-manager-admin-upload.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image-size-manager-admin-media-new.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -135,9 +157,10 @@
         <option value="$PROJECT_DIR$/includes/class-image-size-manager-image-creation-hook.php" />
         <option value="$PROJECT_DIR$/includes/class-image-size-manager-get-sizes.php" />
         <option value="$PROJECT_DIR$/includes/class-image-size-manager-get-size-names.php" />
+        <option value="$PROJECT_DIR$/includes/class-image-size-manager-ajax.php" />
         <option value="$PROJECT_DIR$/includes/class-image-size-manager.php" />
         <option value="$PROJECT_DIR$/admin/js/image-size-manager-admin.js" />
-        <option value="$PROJECT_DIR$/includes/class-image-size-manager-ajax.php" />
+        <option value="$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js" />
         <option value="$PROJECT_DIR$/includes/class-image-size-manager-scripts.php" />
       </list>
     </option>
@@ -153,8 +176,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="50" />
+    <option name="x" value="9" />
+    <option name="y" value="25" />
     <option name="width" value="1416" />
     <option name="height" value="818" />
   </component>
@@ -370,11 +393,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/js" />
       <recent name="$PROJECT_DIR$/depricated" />
       <recent name="$PROJECT_DIR$/includes" />
       <recent name="$PROJECT_DIR$/debug" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/admin/scss" />
     </key>
   </component>
   <component name="RunManager">
@@ -424,12 +447,12 @@
       <updated>1471320007322</updated>
       <workItem from="1471320008704" duration="14074000" />
       <workItem from="1471458144504" duration="19140000" />
-      <workItem from="1471990301894" duration="13885000" />
+      <workItem from="1471990301894" duration="20032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47099000" />
+    <option name="totallyTimeSpent" value="53246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,7 +464,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="50" width="1416" height="818" extended-state="0" />
+    <frame x="9" y="25" width="1416" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -503,10 +526,10 @@
         <state relative-caret-position="828">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <marker date="1472074218000" expanded="true" signature="1744:1854" ph="..." />
-            <marker date="1472074218000" expanded="true" signature="2112:2123" ph="..." />
-            <marker date="1472074218000" expanded="true" signature="2263:2274" ph="..." />
-            <marker date="1472074218000" expanded="true" signature="2664:2959" ph="..." />
+            <marker date="1472144826000" expanded="true" signature="2001:2111" ph="..." />
+            <marker date="1472144826000" expanded="true" signature="2369:2380" ph="..." />
+            <marker date="1472144826000" expanded="true" signature="2520:2531" ph="..." />
+            <marker date="1472144826000" expanded="true" signature="2921:3216" ph="..." />
           </folding>
         </state>
       </provider>
@@ -708,19 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding>
-            <marker date="1472074218000" expanded="true" signature="1744:1854" ph="..." />
-            <marker date="1472074218000" expanded="true" signature="2112:2123" ph="..." />
-            <marker date="1472074218000" expanded="true" signature="2263:2274" ph="..." />
-            <marker date="1472074218000" expanded="true" signature="2664:2959" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-get-sizes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -733,14 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -761,10 +763,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding>
+            <marker date="1472144826000" expanded="true" signature="2001:2111" ph="..." />
+            <marker date="1472144826000" expanded="true" signature="2369:2380" ph="..." />
+            <marker date="1472144826000" expanded="true" signature="2520:2531" ph="..." />
+            <marker date="1472144826000" expanded="true" signature="2921:3216" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-scripts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state relative-caret-position="438">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
           <folding />
         </state>
       </provider>

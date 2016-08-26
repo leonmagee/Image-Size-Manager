@@ -14,6 +14,9 @@ class Image_Size_Manager {
 		 * Actions: pre-upload-ui | pre-plupload-upload-ui
 		 */
 		add_action( 'pre-upload-ui', array( new Self(), 'add_upload_controls' ) );
+		//add_action( 'pre-plupload-upload-ui', array( new Self(), 'add_upload_controls' ) );
+		//add_action( 'post-plupload-upload-ui', array( new Self(), 'add_upload_controls' ) );
+		//add_action( 'post-upload-ui', array( new Self(), 'add_upload_controls' ) );
 	}
 
 	function add_upload_controls() {
