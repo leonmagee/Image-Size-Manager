@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f780812-840f-422a-9d43-9d9495a91079" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js" afterPath="$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js" afterPath="$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js" />
-    </list>
+    <list default="true" id="5f780812-840f-422a-9d43-9d9495a91079" name="Default" comment="" />
     <ignored path="Image-Size-Manager.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,8 +25,8 @@
       <file leaf-file-name="image-size-manager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image-size-manager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
               <folding>
                 <element signature="e#7#665#0#PHP" expanded="true" />
               </folding>
@@ -40,8 +37,8 @@
       <file leaf-file-name="class-debug-print-to-file.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debug/class-debug-print-to-file.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state relative-caret-position="46">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -50,13 +47,14 @@
       <file leaf-file-name="class-image-size-manager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="69">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <marker date="1472144826000" expanded="true" signature="2001:2111" ph="..." />
-                <marker date="1472144826000" expanded="true" signature="2369:2380" ph="..." />
-                <marker date="1472144826000" expanded="true" signature="2520:2531" ph="..." />
-                <marker date="1472144826000" expanded="true" signature="2921:3216" ph="..." />
+                <element signature="e#7#169#0#PHP" expanded="true" />
+                <marker date="1473265304000" expanded="true" signature="2002:2112" ph="..." />
+                <marker date="1473265304000" expanded="true" signature="2370:2381" ph="..." />
+                <marker date="1473265304000" expanded="true" signature="2521:2532" ph="..." />
+                <marker date="1473265304000" expanded="true" signature="2922:3217" ph="..." />
               </folding>
             </state>
           </provider>
@@ -65,18 +63,28 @@
       <file leaf-file-name="class-image-size-manager-get-sizes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-get-sizes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
+            <state relative-caret-position="207">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-image-size-manager-image-creation-hook.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="class-image-size-manager-image-creation-hook.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-image-creation-hook.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="368">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debug-log.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/debug/log/debug-log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -92,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image-size-manager-admin-upload.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="image-size-manager-admin-upload.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="214" column="51" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
+            <state relative-caret-position="138">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,8 +123,8 @@
       <file leaf-file-name="class-image-size-manager-ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+            <state relative-caret-position="851">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,18 +147,18 @@
         <option value="$PROJECT_DIR$/includes/class-debug-print-to-file.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/admin/scss/image-size-manager-admin.scss" />
-        <option value="$PROJECT_DIR$/debug/log/debug-log.txt" />
-        <option value="$PROJECT_DIR$/image-size-manager.php" />
         <option value="$PROJECT_DIR$/debug/class-debug-print-to-file.php" />
-        <option value="$PROJECT_DIR$/includes/class-image-size-manager-image-creation-hook.php" />
         <option value="$PROJECT_DIR$/includes/class-image-size-manager-get-sizes.php" />
         <option value="$PROJECT_DIR$/includes/class-image-size-manager-get-size-names.php" />
-        <option value="$PROJECT_DIR$/includes/class-image-size-manager-ajax.php" />
-        <option value="$PROJECT_DIR$/includes/class-image-size-manager.php" />
         <option value="$PROJECT_DIR$/admin/js/image-size-manager-admin.js" />
         <option value="$PROJECT_DIR$/includes/class-image-size-manager-scripts.php" />
         <option value="$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js" />
         <option value="$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js" />
+        <option value="$PROJECT_DIR$/includes/class-image-size-manager-ajax.php" />
+        <option value="$PROJECT_DIR$/debug/log/debug-log.txt" />
+        <option value="$PROJECT_DIR$/image-size-manager.php" />
+        <option value="$PROJECT_DIR$/includes/class-image-size-manager.php" />
+        <option value="$PROJECT_DIR$/includes/class-image-size-manager-image-creation-hook.php" />
       </list>
     </option>
   </component>
@@ -165,8 +173,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="25" />
+    <option name="y" value="23" />
     <option name="width" value="1416" />
     <option name="height" value="818" />
   </component>
@@ -195,8 +202,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -374,7 +381,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -436,12 +443,15 @@
       <updated>1471320007322</updated>
       <workItem from="1471320008704" duration="14074000" />
       <workItem from="1471458144504" duration="19140000" />
-      <workItem from="1471990301894" duration="20624000" />
+      <workItem from="1471990301894" duration="22677000" />
+      <workItem from="1473261258657" duration="2204000" />
+      <workItem from="1473265119939" duration="1967000" />
+      <workItem from="1473441791124" duration="53000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53838000" />
+    <option name="totallyTimeSpent" value="60115000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,17 +463,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="25" width="1416" height="818" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1416" height="818" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35298398" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36826783" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -471,7 +481,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -488,10 +498,66 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/includes/class-image-size-manager-image-creation-hook.php</url>
+          <line>32</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-get-sizes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-image-creation-hook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/image-size-manager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -502,23 +568,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-debug-print-to-file.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-debug-print-to-file.php" />
     <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <marker date="1472144826000" expanded="true" signature="2001:2111" ph="..." />
-            <marker date="1472144826000" expanded="true" signature="2369:2380" ph="..." />
-            <marker date="1472144826000" expanded="true" signature="2520:2531" ph="..." />
-            <marker date="1472144826000" expanded="true" signature="2921:3216" ph="..." />
+            <element signature="e#7#169#0#PHP" expanded="true" />
+            <marker date="1473265304000" expanded="true" signature="2002:2112" ph="..." />
+            <marker date="1473265304000" expanded="true" signature="2370:2381" ph="..." />
+            <marker date="1473265304000" expanded="true" signature="2521:2532" ph="..." />
+            <marker date="1473265304000" expanded="true" signature="2922:3217" ph="..." />
           </folding>
         </state>
       </provider>
@@ -551,18 +611,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1357">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin.js" />
     <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-ajax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -575,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2162">
           <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,57 +692,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-debug-print-to-file.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/log/leon-debug.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image-size-manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#665#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/log/debug-log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-debug-print-to-file.php" />
+    <entry file="file://$PROJECT_DIR$/debug/log/leon-debug.txt" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/class-debug-print-to-file.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,67 +715,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-get-size-names.php">
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-get-size-names.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/font-awesome/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-get-sizes.php">
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin.js" />
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-image-creation-hook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="92">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/font-awesome/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding>
-            <marker date="1472144826000" expanded="true" signature="2001:2111" ph="..." />
-            <marker date="1472144826000" expanded="true" signature="2369:2380" ph="..." />
-            <marker date="1472144826000" expanded="true" signature="2520:2531" ph="..." />
-            <marker date="1472144826000" expanded="true" signature="2921:3216" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="851">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -781,18 +751,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-media-new.js">
+    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="138">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/image-size-manager-admin-upload.js">
+    <entry file="file://$PROJECT_DIR$/debug/class-debug-print-to-file.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="214" column="51" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
+        <state relative-caret-position="46">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image-size-manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#7#665#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug/log/debug-log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#169#0#PHP" expanded="true" />
+            <marker date="1473265304000" expanded="true" signature="2002:2112" ph="..." />
+            <marker date="1473265304000" expanded="true" signature="2370:2381" ph="..." />
+            <marker date="1473265304000" expanded="true" signature="2521:2532" ph="..." />
+            <marker date="1473265304000" expanded="true" signature="2922:3217" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-get-sizes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-image-size-manager-image-creation-hook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
           <folding />
         </state>
       </provider>

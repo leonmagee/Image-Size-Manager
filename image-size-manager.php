@@ -18,6 +18,23 @@
  * Domain Path:       /languages
  */
 
+// tester
+//
+//$ism_option_string = 'image-size-manager-removed-sizes_1';
+//$option_serialized = get_option( $ism_option_string );
+//
+//foreach( $option_serialized as $item ) {
+//	var_dump( $item );
+//}
+//var_dump( $option_serialized );
+//
+//die('so far...');
+
+// end tester
+
+
+
+
 /**
  * Abort if file is called directly
  */

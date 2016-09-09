@@ -15,21 +15,23 @@ class Image_Size_Manager_Image_Creation_Hook {
 
 	function change_image_sizes_to_generate( $sizes ) {
 
-
 		/**
 		 * @todo Make sure this works correctly if there is no option in the DB.
+		 * 'get_option' will unserialize the array
 		 */
 
 		$ism_user_id = get_current_user_id();
 		$ism_option_string = 'image-size-manager-removed-sizes_' . $ism_user_id;
 
-		if ( $option_serialized = get_option( $ism_option_string ) ) {
+		/**
+		 * @todo verify what happens when the option is empty
+		 */
+		if ( $option_array = get_option( $ism_option_string ) ) {
 
-			$option = unserialize( $option_serialized );
-
-			$option_explode = explode( ',', $option );
-
-			$option_array = array_filter( $option_explode );
+			// DEBUG START
+			require plugin_dir_path( __FILE__ ) . '../debug/class-debug-print-to-file.php';
+			new Debug_Print_To_File( $option_array );
+			// DEBUG END
 
 			$sizes_new = array();
 

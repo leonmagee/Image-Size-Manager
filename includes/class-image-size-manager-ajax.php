@@ -35,8 +35,8 @@ class Image_Size_Manager_Ajax {
 				$data_array = self::ism_array_from_data( $checked_boxes_array );
 
 				// DEBUG START
-				require plugin_dir_path( __FILE__ ) . '../debug/class-debug-print-to-file.php';
-				new Debug_Print_To_File( $data_array );
+//				require plugin_dir_path( __FILE__ ) . '../debug/class-debug-print-to-file.php';
+//				new Debug_Print_To_File( $data_array );
 				// DEBUG END
 
 				update_option( $ism_option_string, $data_array );

@@ -5,6 +5,7 @@
  * it might be easier to have these be objects instead of static classes, since it will
  * make dependency injection easier???
  */
+
 class Image_Size_Manager {
 
 	static function plugin_activation_action() {
