@@ -58,6 +58,17 @@ class Image_Size_Manager_Scripts {
 				'1.0.1'
 			);
 		}
+
+		if ( $page_slug == 'post.php' ) {
+
+			// plugin admin js
+			wp_enqueue_script(
+				'image-size-manager-js',
+				$plugin_dir . '../admin/js/image-size-manager-admin-post.js',
+				array( 'jquery' ),
+				'1.0.1'
+			);
+		}
 	}
 
 

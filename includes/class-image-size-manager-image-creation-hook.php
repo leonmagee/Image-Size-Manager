@@ -29,8 +29,8 @@ class Image_Size_Manager_Image_Creation_Hook {
 		if ( $option_array = get_option( $ism_option_string ) ) {
 
 			// DEBUG START
-			require plugin_dir_path( __FILE__ ) . '../debug/class-debug-print-to-file.php';
-			new Debug_Print_To_File( $option_array );
+			//require plugin_dir_path( __FILE__ ) . '../debug/class-debug-print-to-file.php';
+			//new Debug_Print_To_File( $option_array );
 			// DEBUG END
 
 			$sizes_new = array();
